@@ -1,0 +1,26 @@
+============================================
+  HOW TO ADD YOUR APK TO THIS WEBSITE
+============================================
+
+1. Place your APK file in this /public folder.
+
+2. Rename your APK file to:
+      app-release.apk
+
+   OR open src/App.tsx and change this line:
+      apkFileName: "app-release.apk",
+   to match your actual filename.
+
+3. Also customize the app details in APP_CONFIG inside src/App.tsx:
+   - name: Your app name
+   - tagline: Short catchy slogan
+   - description: Description of your app
+   - version: e.g. "v1.2.0"
+   - size: APK file size e.g. "25 MB"
+   - androidVersion: Minimum Android version e.g. "5.0+"
+   - lastUpdated: Date of last update
+   - features: List of features (icon, title, description)
+
+4. Rebuild and redeploy!
+
+============================================
